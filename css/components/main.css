@@ -1,5 +1,3 @@
-
-
 main{
     width: 100%;
 }
@@ -37,8 +35,14 @@ main{
   display: flex;
   flex-direction: column;
 }
+/*----------extras---------*/
+.fab, .far {
+   
+    
+    color: #39f;
+}
 
-/*-----------------estilo del about-------------------------------------*/
+/*-----------------style of about me-------------------------------------*/
 .about-description p{
     color: #808080;
     width: 100%;
@@ -71,7 +75,7 @@ main{
     padding-left: 1em;
 }
 
-/*----------------estilo de las habilidades*/
+/*----------------style of service-----------------------------------*/
 .service{
     margin-top: 1em;
 }
@@ -119,7 +123,7 @@ main{
     color: #777;
     width: 95%;
 }
-/*------------------------estilo de la tecnologia----------------------*/
+/*------------------------style of tecnologic----------------------*/
 .tecnologia{
     margin-top: 3em;
 }
@@ -158,7 +162,7 @@ main{
     margin: auto;
     height: auto;
 }
-/*estilo de los projectos*/
+/*----------------------style of project---------------------------*/
 
 .project h2{
   padding-top: .8em;
@@ -186,7 +190,7 @@ display: block;
 .project-card{
     
     border: 1px solid #dee2e6;
-    margin-left: 2em;
+    margin: 1em 0 0 2em;
     height:auto; 
     display: flex;
     flex-direction: column;
