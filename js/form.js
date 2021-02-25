@@ -16,11 +16,15 @@ function eventlisteners(){
 nombre.addEventListener('blur', validarFormulario);
 email.addEventListener('blur', validarFormulario);
 mensaje.addEventListener('blur', validarFormulario);
+
+/*
 btnSubmit.addEventListener('click', (e)=>{
     e.preventDefault();
     mostarMensaje('Email enviado');
     formulario.reset();
 })
+*/
+
 }
 
 function btnDisable(){
