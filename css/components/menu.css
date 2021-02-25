@@ -29,6 +29,10 @@ body{
     border-radius: 3px;
     margin: 0 30px;
 }
+.logo a{
+    text-decoration: none;
+    color: #fff;
+}
 
 .menu_items li  a{
     padding: 7px 13px;

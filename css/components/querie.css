@@ -93,7 +93,7 @@
 
 }
 
-
+/* -----------------querias para dispositivo de ipad ---------------------- */
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){
     .contenido{
@@ -107,7 +107,6 @@
     }
     .info{
         font-size: 2.3em;
-        margin-top: 6em;
     }
     .content-services{
         flex-direction: column;
@@ -182,6 +181,9 @@
         margin-top: 1em;
     }
 }
+
+
+/* -----------------query para dispositivo moviles-----------------*/
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px){
     .info{
         font-size: 2em;
