@@ -186,17 +186,17 @@
     </div>
 </div>
 
-<class class="contact" id="contact">
+<div class="contact" id="contact">
     <h2 >Contact</h2>
     <div class="contact-content">
         <div class="contact-form">
-            <form id="formulario" class="formulario-form">
+            <form id="formulario" class="formulario-form" method="POST" action="php/process.php" >
                 <label for="name">Name</label>
                 <input type="text" name="name" id="name">
                 <label>Email</label>
                 <input type="email" name="email" id="email">
                 <label >Message</label>
-                <textarea id="mensaje" rows="6" cols="2"></textarea>
+                <textarea id="mensaje"  name ="message" from="form" rows="6" cols="2"></textarea>
                 <div id="mensaje-error"></div>
                 <input type="submit" value="submit" class="button-submit" id="submit" >
             </form>

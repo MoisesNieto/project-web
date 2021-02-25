@@ -249,9 +249,7 @@ display: block;
    text-align: center;
    font-size: 3em;
 }
-.contact{
-    height: 400px;
-}
+
 .btn-disabled{
     background-color: yellow;
 }
