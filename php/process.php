@@ -2,7 +2,6 @@
 
 
 header("Location:../index.html");
-die();
 
 echo	$name = $_POST['name'];
 echo    $email = $_POST['email'];
@@ -16,6 +15,9 @@ if(mail('moi34_5@hotmail.com', $name, $mensaje,$cabeceras)){
 }else{
 	echo "there an error!";
 }
+die();
+
+
 
 
  ?>

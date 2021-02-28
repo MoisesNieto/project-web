@@ -7,7 +7,7 @@
     overflow: hidden;
 }
 .bar span{
-    height: 2px;
+    height: 3px;
     float: left;
     background-color:#39f;
 }

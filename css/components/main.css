@@ -29,6 +29,7 @@ main{
 .info{
     color: #f7f7f7;
     margin-top: -1em;
+font-size: 1.5em;
 }
 .contenido-name{
   border-left: 2px solid #f7f7f7;
@@ -36,9 +37,7 @@ main{
   flex-direction: column;
 }
 /*----------extras---------*/
-.fab, .far {
-   
-    
+.fab, .far {  
     color: #39f;
 }
 
@@ -77,7 +76,8 @@ main{
 
 /*----------------style of service-----------------------------------*/
 .service{
-    margin-top: 1em;
+    margin-top: 2em;
+    
 }
 .content-services{
     display: flex;
@@ -140,7 +140,8 @@ main{
     height: auto;
 }
 .tecnologia-card{
-    border: 1px solid #dee2e6;
+    background-color: #F2F2F2;
+    /*border: 1px solid #dee2e6;*/
     width: 20vw;
     border-radius: 6px;
     margin: 1em auto;
@@ -184,11 +185,11 @@ display: block;
     flex-wrap: wrap;
     grid-template-columns: 1fr 1fr 1fr 1fr ;
     margin-left: 1em;
-    margin-right: 3.5%;   
+    margin-right: 1em;   
 }
 
 .project-card{
-    
+ 
     border: 1px solid #dee2e6;
     margin: 1em 0 0 2em;
     height:auto; 
@@ -219,7 +220,6 @@ display: block;
     justify-content: center;
     align-items: center;
     margin: auto;
-    
 }
 
 .formulario-form{

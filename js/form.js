@@ -6,6 +6,8 @@ const formulario = document.querySelector('#formulario');
 const btnSubmit= document.querySelector('#submit');
 const divError = document.querySelector('#mensaje-error');
 
+const er =/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/; 
+
 //eventos
 eventlisteners();
 
@@ -17,14 +19,6 @@ nombre.addEventListener('blur', validarFormulario);
 email.addEventListener('blur', validarFormulario);
 mensaje.addEventListener('blur', validarFormulario);
 
-/*
-btnSubmit.addEventListener('click', (e)=>{
-    e.preventDefault();
-    mostarMensaje('Email enviado');
-    formulario.reset();
-})
-*/
-
 }
 
 function btnDisable(){
@@ -33,28 +27,44 @@ function btnDisable(){
 function validarFormulario(e){
     e.preventDefault();
         if(e.target.value.length > 0){
-            btnSubmit.disabled = false;
+
+            //delete the errors if exists
+            const error = document.querySelector('p.error') ;
+            if(error){
+                error.remove();
+            }
+
         }else{
-            mostarMensaje('Todos los campos son obligatorio');
+            mostarMensaje('All fields are required');
         }
         if (e.target.type === 'email'){
-            const er =/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/; 
-            const resultado = e.target.value.indexOf('@');
             if (er.test(e.target.value)){
-                mostarMensaje('el email  valido');
+
+                 //delete the errors if exists
+                const error = document.querySelector('p.error');
+                if(error){
+                    error.remove();
+                }
             }else{
-                mostarMensaje('el email no es valido');
+                mostarMensaje('the email is not valid');
     
             }
+    } 
+    
+    if (er.test(email.value) && nombre.value !== ' ' &&  mensaje.value !== ' ' ){
+        btnSubmit.disabled = false;
     }
-       
 }
+
 function mostarMensaje(mensaje){
     const pMensaje = document.createElement('p');
     pMensaje.textContent= mensaje;
-    divError.appendChild(pMensaje)
-        setTimeout(()=>{
-            pMensaje.remove();
-        },3000)
+    pMensaje.className = 'error';
+
+    const errores = document.querySelectorAll('.error');
+    console.log(errores);
+    if(errores.length === 0) {
+        divError.appendChild(pMensaje);
+    }
 }
 
