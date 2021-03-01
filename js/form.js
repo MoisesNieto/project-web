@@ -2,6 +2,8 @@
 const nombre = document.querySelector('#name');
 const email= document.querySelector('#email');
 const mensaje= document.querySelector('#mensaje');
+
+//variable of the camps 
 const formulario = document.querySelector('#formulario');
 const btnSubmit= document.querySelector('#submit');
 const divError = document.querySelector('#mensaje-error');
@@ -18,7 +20,6 @@ function eventlisteners(){
 nombre.addEventListener('blur', validarFormulario);
 email.addEventListener('blur', validarFormulario);
 mensaje.addEventListener('blur', validarFormulario);
-
 }
 
 function btnDisable(){
@@ -27,13 +28,10 @@ function btnDisable(){
 function validarFormulario(e){
     e.preventDefault();
         if(e.target.value.length > 0){
-
-            //delete the errors if exists
             const error = document.querySelector('p.error') ;
             if(error){
                 error.remove();
             }
-
         }else{
             mostarMensaje('All fields are required');
         }
@@ -48,7 +46,7 @@ function validarFormulario(e){
             }else{
                 mostarMensaje('the email is not valid');
     
-            }
+        }
     } 
     
     if (er.test(email.value) && nombre.value !== ' ' &&  mensaje.value !== ' ' ){

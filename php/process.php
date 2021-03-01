@@ -11,10 +11,11 @@ echo	$mensaje = $_POST['message'];
 $cabeceras .= $email. "\r\n";
 
 if(mail('moi34_5@hotmail.com', $name, $mensaje,$cabeceras)){
-	echo "correo enviado";
+	echo "correo send";
 }else{
 	echo "there an error!";
 }
+
 die();
 
 
