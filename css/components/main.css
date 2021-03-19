@@ -79,7 +79,7 @@ main{
     display: block;       
     content: " " ;      
     margin-top: -100px;       
-    height: 80px;       
+    height: 60px;       
     visibility: hidden; 
   } 
   
@@ -136,7 +136,7 @@ main{
     display: block;       
     content: " " ;      
     margin-top: -100px;       
-    height: 80px;       
+    height: 60px;       
     visibility: hidden; 
   }
 

@@ -1,4 +1,3 @@
-
 body{
     font-family: 'Open Sans', sans-serif;
 }
@@ -32,9 +31,7 @@ body{
 .logo a{
     text-decoration: none;
     color: #fff;
-
 }
-
 .menu_items li  a{
     padding: 7px 13px;
     text-decoration: none;
@@ -44,7 +41,6 @@ body{
     color:#fff;
 
 }
-
 .menu_items li:hover, li.active {
     background-color: rgba(0, 0,0,.3);
     transition: .4%;
@@ -82,7 +78,7 @@ ul.show {
     .menu_items {
         position: fixed;
         width: 100vw;
-        height: calc(100% -65px);
+        height: 569px;
         background: #414141;
         top: -100vh;
         transition: all .4%;
@@ -91,7 +87,7 @@ ul.show {
 
     }
     .menu_items li {
-       margin: 21px 0 0 -80px;
+       margin: 38px 0 0 -80px;
         line-height: 30px;
     }
     .menu_items li:hover{

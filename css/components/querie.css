@@ -199,6 +199,7 @@
     }
     .about-skill{
         width: 100%;
+        margin-bottom: 70px;
     }
     .about-description{
         width: 100%;
@@ -212,7 +213,9 @@
         width: 80%;
         text-align: center;
     }
-
+    #service{
+        margin-top: 0px;
+    }
     .service-card{
         margin: 1em 0 0 0 ;
         width:70vw ;
