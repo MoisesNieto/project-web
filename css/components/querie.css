@@ -3,7 +3,6 @@
     .contenido{
         background-size: 100% 80% ;
         height: 430px;
-        width: 100vw;
     }
     .contenido-info p{
         font-size:3em ;
@@ -15,42 +14,7 @@
         font-size: 1.5em;
         width: 80%;
     }
-
-    .content-services{ 
-        flex-direction: column;
-        height: auto;
-    }
-    .service-card{
-        margin: 1em 0 0 0 ;
-        width:70vw ;
-        margin: 1em auto ;
-        height: auto;   
-    }
-    .service-img{
-        width: 30%;
-    }
-    .tecnologia-card{
-        margin-top: 8em;
-        height: 124px;
-        margin: 1em auto;
-        width: 45vw;
-    }
-    .tecnologia-content{
-        display: grid;
-        flex-wrap: wrap;
-        grid-template-columns: 1fr 1fr ;
-        height: auto;
-    }
-    .tecnologia-img1{
-       padding-top: 1.5em;
-       width: 30%;
-
-    }
-    .tecnologia-img-r{
-        width: 18vw;
-        padding: .8em;
-    }
-    
+   
     .project-content{
         margin-top: 3em;
         display: grid;
@@ -110,21 +74,10 @@
         flex-direction: column;
         height: auto;
     }
-    .service-card{   
-        margin: .8em 0 0 0 ;
-        width:60vw ;
-        margin: 1em auto ;
-        height: 250px;  
-    }
     .service-img{
         width: 30%;
     }
-    .tecnologia-content{
-        display: grid;
-        flex-wrap: wrap;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        height: auto;
-    }
+
     .tecnologia-card{
         margin-top: 8em;
         height: 130px;
@@ -186,10 +139,7 @@
     .info{
         font-size: 2em;
     }
-    .content-services{
-        flex-direction: column;
-        height: auto;
-    }
+
     .contenido-info p{
         font-size:2.4em ;
         margin-top: 5.1em;
@@ -217,17 +167,11 @@
         margin-top: 0px;
     }
     .service-card{
-        margin: 1em 0 0 0 ;
         width:70vw ;
-        margin: 1em auto ;
-        height: 200px;  
+        margin: auto ;
+        height: auto;  
     }
-    .tecnologia-content{
-        display: grid;
-        flex-wrap: wrap;
-        grid-template-columns: 1fr 1fr;
-        height: auto;
-    }
+    
     .tecnologia-card{
         margin-top: 8em;
         height: 110px;
