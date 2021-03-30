@@ -6,7 +6,7 @@ const mensaje= document.querySelector('#mensaje');
 //variable of the camps 
 const formulario = document.querySelector('#formulario');
 const btnSubmit= document.querySelector('#submit');
-const divError = document.querySelector('#mensaje-error');
+const divError = document.querySelector('#mensaje_error');
 
 const er =/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/; 
 
@@ -53,7 +53,6 @@ function validarFormulario(e){
         btnSubmit.disabled = false;
     }
 }
-
 function mostarMensaje(mensaje){
     const pMensaje = document.createElement('p');
     pMensaje.textContent= mensaje;

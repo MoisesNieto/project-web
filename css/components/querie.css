@@ -4,32 +4,34 @@
         background-size: 100% 80% ;
         height: 430px;
     }
-    .contenido-info p{
-        font-size:3em ;
+    .contenido_info p{
+        font-size:2.6em ;
         margin-top: 4em;
-        
     }
     .info{
         text-align: center;
         font-size: 1.5em;
         width: 80%;
+        margin: 9px 0 0 0;
     }
-   
-    .project-content{
+    .tecnologia_card{
+        height: 80px;
+    }
+    .project_content{
         margin-top: 3em;
         display: grid;
         flex-wrap: wrap;
         grid-column-gap: .1em;
         grid-template-columns: 1fr 1fr;
     }
-    .project-card{
+    .project_card{
         border-style: groove;
         height: 290px;
         width: 40vw;
         margin: 1em auto;
 
     }
-    .project-img{
+    .project_img{
         width: 80%;
         margin-top: .4em;
         
@@ -38,15 +40,13 @@
         font-size: .9em;
         margin-top: .4em;
     }
-    .project-card a{
+    .project_card a{
         width: 30%;
     }
-    
-
-    .contact-content{
+    .contact_content{
         flex-direction: column;
     }
-    .contact-items{
+    .contact_items{
         margin-top: 1em;
         width: 70vw;
         margin: auto;
@@ -54,78 +54,53 @@
     }
 
 }
-
-/* -----------------querias para dispositivo de ipad ---------------------- */
+/* -----------------querias for device of ipad ---------------------- */
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){
     .contenido{
         background-size: auto 90%;
-        height: 430px;
+        height: 550px;
         width: 100vw;
     }
-    .contenido-info p{
-        font-size:3em ;
-        margin-top: 4em;
+    .contenido_info p{
+        font-size:4em ;
+      
     }
     .info{
-        font-size: 2.3em;
+        font-size: 1.8em;
     }
-    .content-services{
-        flex-direction: column;
-        height: auto;
-    }
-    .service-img{
-        width: 30%;
-    }
-
-    .tecnologia-card{
-        margin-top: 8em;
-        height: 130px;
-        width: 90%;
-        margin: 1em auto;
-        
-
-    }
-    .tecnologia-img1{
-       padding-top: 1.5em;
-       width: 45%;
-
-    }
-    .tecnologia-img-r{
-        padding-top: 1.3em;
-       width: 45%;
-    }
-    .project-content{
+    
+    .project_content{
         margin-top: 3em;
         display: grid;
         flex-wrap: wrap;
         grid-column-gap: .1em;
         grid-template-columns: 1fr 1fr 1fr;
     }
-    .project-card{
+    .project_card{
         border: 1px solid #dee2e6;
         border-radius: 6px;
         border-style: groove;
-        height: 260px;
+        height: auto;
         width: 80%;
         margin: 1em auto;
 
     }
-    .project-img{
+    .project_img{
         width: 100%;
         margin-top: 0;
         border-radius: 6px  6px 0 0 ;
         
     }
-    .project-card p{
+    .project_card p{
         font-size: .9em;
         margin-top: .4em;
     }
     
-    .contact-content{
+    .contact_content{
         flex-direction: column;
     }
-    .contact-items{
+    .contact_items{
         margin-top: 1em;
         width: 70vw;
         margin: auto;
@@ -137,88 +112,52 @@
 /* -----------------query para dispositivo moviles-----------------*/
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px){
     .info{
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
-    .contenido-info p{
-        font-size:2.4em ;
+    .contenido_info p{
+        font-size:2em ;
         margin-top: 5.1em;
     }
-    .about-me{
-        flex-direction: column;
-    }
-    .about-skill{
-        width: 100%;
-        margin-bottom: 70px;
-    }
-    .about-description{
-        width: 100%;
-    }
-    .about_skill_elements {
-        padding-left: 0em;
-    }
+    
+  
     .info {
         display: inline;
         font-size: 1.2em;
         width: 80%;
         text-align: center;
     }
-    #service{
-        margin-top: 0px;
-    }
-    .service-card{
-        width:70vw ;
-        margin: auto ;
-        height: auto;  
-    }
-    
-    .tecnologia-card{
-        margin-top: 8em;
-        height: 110px;
-        width: 90%;
-        margin: 1em auto;
-    }
-    .tecnologia-img1{
-       padding-top: 1.5em;
-       width: 40%;
-       
-    }
-    .tecnologia-img-r{
-        padding-top: 1.3em;
-        width: 50%;
-    }
-    .project-content{
+    .project_content{
         margin-top: 1.5em;
         display: grid;
         flex-wrap: wrap;
         grid-column-gap: .1em;
         grid-template-columns: 1fr ;
     }
-    .project-img{
+    .project_img{
         width: 100%;
         margin-top: 0;
         border-radius: 6px  6px 0 0 ;
-       
     }
-    .project-card a{
+    .project_card a{
         width: 40%;
     }
-    .project-card{
+    .project_card{
         border: none;
         margin: 1em auto;
         width: 80%;
         border: 1px solid #dee2e6;
         width: 80%;
         border-radius: 6px;
-        height: 300px;
+        height: auto;
     }
-    .project-card button{
+    .project_card button{
         margin-top: 1em;
     }
-    .contact-content{
+    .contact_content{
         flex-direction: column;
     }
-    .contact-items{
+    .contact_items{
         margin-top: 1em;
         width: 70vw;
         margin: auto;

@@ -1,7 +1,6 @@
 body{
     font-family: 'Open Sans', sans-serif;
 }
-
 .menu{
     position: fixed;
     background-color:#1e211f;
@@ -11,7 +10,6 @@ body{
     justify-content: space-between;
     align-items: center;
     box-shadow: 5px 0 10px rgba(0, 0,0, 0.6);
-
 }
 .logo{
     color: #fff;
@@ -39,7 +37,6 @@ body{
     display: block;
     text-transform: uppercase;
     color:#fff;
-
 }
 .menu_items li:hover, li.active {
     background-color: rgba(0, 0,0,.3);
@@ -78,7 +75,6 @@ ul.show {
     .menu_items {
         position: fixed;
         width: 100vw;
-        height: 569px;
         background: #414141;
         top: -100vh;
         transition: all .4%;
