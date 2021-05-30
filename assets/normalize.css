@@ -12,6 +12,10 @@ html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
 
 /* Sections
    ========================================================================== */
@@ -147,6 +151,7 @@ sup {
 
 img {
   border-style: none;
+	max-width: 100%;
 }
 
 /* Forms

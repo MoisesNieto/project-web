@@ -1,11 +1,11 @@
 <?php 
 
+	
+header("Location:https://techmn.es/");
 
-header("Location:../index.html");
-
-echo	$name = $_POST['name'];
-echo    $email = $_POST['email'];
-echo	$mensaje = $_POST['message'];
+$name = $_POST['name'];
+$email = $_POST['email'];
+$mensaje = $_POST['message'];
 
 //here header and value for the form
 $cabeceras .= $email. "\r\n";
@@ -15,6 +15,7 @@ if(mail('moi34_5@hotmail.com', $name, $mensaje,$cabeceras)){
 }else{
 	echo "there an error!";
 }
+	
 
 die();
 
